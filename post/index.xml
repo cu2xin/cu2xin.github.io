@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 小醋的博客</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on 小醋的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 19 Jan 2020 21:49:12 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何用hugo搭建个人博客</title>
+      <link>http://localhost:1313/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 19 Jan 2020 21:49:12 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>前端学习 如何用hugo搭建个人博客 一、安装Hugo Mac安装方式 brew install hugo hugo version Windows安装方式 去Hugo releases页面下载hugo_</description>
+    </item>
+    
+    <item>
+      <title>烘焙教程 白吐司</title>
+      <link>http://localhost:1313/post/%E7%83%98%E7%84%99%E6%95%99%E7%A8%8B-%E7%99%BD%E5%90%90%E5%8F%B8/</link>
+      <pubDate>Sat, 18 Jan 2020 16:50:26 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E7%83%98%E7%84%99%E6%95%99%E7%A8%8B-%E7%99%BD%E5%90%90%E5%8F%B8/</guid>
+      <description>烘焙教程 白吐司 配方： 高筋面粉：250g 牛奶：165g 盐：3g 酵母：3g 细砂糖：30g 无盐黄油：25g 备注:此配方适用于450g方形土司盒1个</description>
+    </item>
+    
+    <item>
+      <title>开博大吉</title>
+      <link>http://localhost:1313/post/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
+      <pubDate>Sat, 18 Jan 2020 15:04:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
+      <description>大家好 我的博客开通了，希望我能写出好文章给大家看。</description>
+    </item>
+    
+  </channel>
+</rss>
