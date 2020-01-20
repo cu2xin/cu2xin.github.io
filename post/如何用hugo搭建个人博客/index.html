@@ -69,7 +69,7 @@
 <meta itemprop="description" content="前端学习 如何用hugo搭建个人博客 一、安装Hugo Mac安装方式 brew install hugo hugo version Windows安装方式 去Hugo releases页面下载hugo_">
 <meta itemprop="datePublished" content="2020-01-19T21:49:12&#43;08:00" />
 <meta itemprop="dateModified" content="2020-01-19T21:49:12&#43;08:00" />
-<meta itemprop="wordCount" content="978">
+<meta itemprop="wordCount" content="1138">
 
 
 
@@ -348,6 +348,7 @@
         <li><a href="#一安装hugo">一、安装Hugo</a></li>
         <li><a href="#二搭建博客">二、搭建博客</a></li>
         <li><a href="#博客上传在github">博客上传在GitHub</a></li>
+        <li><a href="#博客备份">博客备份</a></li>
       </ul>
     </li>
   </ul>
@@ -450,12 +451,37 @@ git add .
 git commit -v 
 git remote add origin git@github.com:cu2xin/cu2xin.github.io.git
 git push -u origin master
-</code></pre><p>2.查看博客</p>
+</code></pre><ol start="2">
+<li>查看博客</li>
+</ol>
 <ul>
 <li>在cu2xin.github.io处点击Settings；</li>
 <li>在弹出网页中的GitHub pages处找到链接点击查看博客。</li>
 </ul>
-<blockquote>
+<h3 id="博客备份">博客备份</h3>
+<ol>
+<li>在github上新建一个仓库cu2xin.github.io-creator。</li>
+<li>运行如下代码，查看是否有异常文件。</li>
+</ol>
+<pre><code>git add .
+gst
+</code></pre><ol start="3">
+<li>查询异常文件中是否有.git文件,可将.git文件删除。</li>
+</ol>
+<pre><code>ls -a themes/jane/
+rm -rf themes/jane/.git
+</code></pre><ol start="4">
+<li>运行如下命令完成备份：</li>
+</ol>
+<pre><code>git commit -v
+git remote add origin git@github.com:cu2xin/cu2xin.github.io-creator.git
+git push -u origin master
+</code></pre><ol start="5">
+<li>注意：如果不小心上传了https，则运行如下命令改为ssh。</li>
+</ol>
+<pre><code>git remote set-url origin git@github.com:cu2xin/cu2xin.github.io-creator.git
+git push -u origin master
+</code></pre><blockquote>
 <p>观书有会意处，题其衣裳，以记其事。</p>
 </blockquote>
 

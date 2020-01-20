@@ -111,12 +111,37 @@ git add .
 git commit -v 
 git remote add origin git@github.com:cu2xin/cu2xin.github.io.git
 git push -u origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.查看博客&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;查看博客&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;在cu2xin.github.io处点击Settings；&lt;/li&gt;
 &lt;li&gt;在弹出网页中的GitHub pages处找到链接点击查看博客。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
+&lt;h3 id=&#34;博客备份&#34;&gt;博客备份&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;在github上新建一个仓库cu2xin.github.io-creator。&lt;/li&gt;
+&lt;li&gt;运行如下代码，查看是否有异常文件。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;git add .
+gst
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;查询异常文件中是否有.git文件,可将.git文件删除。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;ls -a themes/jane/
+rm -rf themes/jane/.git
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;运行如下命令完成备份：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;git commit -v
+git remote add origin git@github.com:cu2xin/cu2xin.github.io-creator.git
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;注意：如果不小心上传了https，则运行如下命令改为ssh。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;git remote set-url origin git@github.com:cu2xin/cu2xin.github.io-creator.git
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
 &lt;p&gt;观书有会意处，题其衣裳，以记其事。&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
