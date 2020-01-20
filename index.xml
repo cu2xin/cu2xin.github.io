@@ -95,7 +95,7 @@ hugo server     #预览非草稿
 &lt;li&gt;运行如下代码：&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;hugo -D
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;博客上传在github&#34;&gt;博客上传在GitHub&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;三博客上传到github&#34;&gt;三、博客上传到GitHub&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;上传public&lt;/li&gt;
 &lt;/ol&gt;
@@ -118,7 +118,7 @@ git push -u origin master
 &lt;li&gt;在cu2xin.github.io处点击Settings；&lt;/li&gt;
 &lt;li&gt;在弹出网页中的GitHub pages处找到链接点击查看博客。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;博客备份&#34;&gt;博客备份&lt;/h3&gt;
+&lt;h3 id=&#34;四博客备份&#34;&gt;四、博客备份&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;在github上新建一个仓库cu2xin.github.io-creator。&lt;/li&gt;
 &lt;li&gt;运行如下代码，查看是否有异常文件。&lt;/li&gt;
