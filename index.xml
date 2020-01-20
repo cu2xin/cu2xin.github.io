@@ -124,7 +124,7 @@ git push -u origin master
 &lt;li&gt;运行如下代码，查看是否有异常文件。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;git add .
-gst
+git status
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;查询异常文件中是否有.git文件,可将.git文件删除。&lt;/li&gt;
 &lt;/ol&gt;
