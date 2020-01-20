@@ -69,7 +69,7 @@
 <meta itemprop="description" content="前端学习 如何用hugo搭建个人博客 一、安装Hugo Mac安装方式 brew install hugo hugo version Windows安装方式 去Hugo releases页面下载hugo_">
 <meta itemprop="datePublished" content="2020-01-19T21:49:12&#43;08:00" />
 <meta itemprop="dateModified" content="2020-01-19T21:49:12&#43;08:00" />
-<meta itemprop="wordCount" content="1143">
+<meta itemprop="wordCount" content="1206">
 
 
 
@@ -348,7 +348,8 @@
         <li><a href="#一安装hugo">一、安装Hugo</a></li>
         <li><a href="#二搭建博客">二、搭建博客</a></li>
         <li><a href="#三博客上传到github">三、博客上传到GitHub</a></li>
-        <li><a href="#四博客备份">四、博客备份</a></li>
+        <li><a href="#四添加第二个博客">四、添加第二个博客</a></li>
+        <li><a href="#五博客备份">五、博客备份</a></li>
       </ul>
     </li>
   </ul>
@@ -434,7 +435,7 @@ hugo server     #预览非草稿
 <li>新建一个终端</li>
 <li>运行如下代码：</li>
 </ul>
-<pre><code>hugo -D
+<pre><code>hugo -D            #hugo也可以
 </code></pre><h3 id="三博客上传到github">三、博客上传到GitHub</h3>
 <ol>
 <li>上传public</li>
@@ -458,7 +459,16 @@ git push -u origin master
 <li>在cu2xin.github.io处点击Settings；</li>
 <li>在弹出网页中的GitHub pages处找到链接点击查看博客。</li>
 </ul>
-<h3 id="四博客备份">四、博客备份</h3>
+<h3 id="四添加第二个博客">四、添加第二个博客</h3>
+<p>运行如下命令添加第二篇博客：</p>
+<pre><code>cd ..
+hugo new post/博客名称2.md      #编辑博客2内容
+hugo
+cd public
+ga .
+gc
+gp
+</code></pre><h3 id="五博客备份">五、博客备份</h3>
 <ol>
 <li>在github上新建一个仓库cu2xin.github.io-creator。</li>
 <li>运行如下代码，查看是否有异常文件。</li>
