@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小醋的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 19 Jan 2020 21:49:12 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2020 19:46:43 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《HTML入门笔记1》</title>
+      <link>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Sat, 01 Feb 2020 19:46:43 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <description>前端学习 《HTML 入门笔记 1》 一、HTML 的发明者 蒂姆·伯纳斯·李（Tim Berners-Lee） 2004 年，英女皇伊丽莎白二世向 Tim Berners-Lee 颁发大英帝国</description>
+    </item>
     
     <item>
       <title>如何用hugo搭建个人博客</title>
@@ -17,7 +26,7 @@
       <pubDate>Sun, 19 Jan 2020 21:49:12 +0800</pubDate>
       
       <guid>http://localhost:1313/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>前端学习 如何用hugo搭建个人博客 一、安装Hugo Mac安装方式 brew install hugo hugo version Windows安装方式 去Hugo releases页面下载hugo_</description>
+      <description>前端学习 如何用 hugo 搭建个人博客 一、安装 Hugo Mac 安装方式 brew install hugo hugo version Windows 安装方式 去Hugo releases 页面下载 hugo_xxxx_Windows-64bit.zip 解压，把 hugo.exe 放到 D:\Software\hugo\hugo.exe 把 D:\Software\hugo</description>
     </item>
     
     <item>

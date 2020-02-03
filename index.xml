@@ -6,10 +6,322 @@
     <description>Recent content on 小醋的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 19 Jan 2020 21:49:12 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2020 19:46:43 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《HTML入门笔记1》</title>
+      <link>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Sat, 01 Feb 2020 19:46:43 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      
+        <description>&lt;h1 id=&#34;前端学习&#34;&gt;前端学习&lt;/h1&gt;
+&lt;h2 id=&#34;html-入门笔记-1&#34;&gt;《HTML 入门笔记 1》&lt;/h2&gt;
+&lt;h3 id=&#34;一html-的发明者&#34;&gt;一、HTML 的发明者&lt;/h3&gt;
+&lt;p&gt;蒂姆·伯纳斯·李（Tim Berners-Lee）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2004 年，英女皇伊丽莎白二世向 Tim Berners-Lee 颁发大英帝国爵级司令勋章。&lt;/li&gt;
+&lt;li&gt;2012 年夏季奥林匹克运动会开幕典礼上，他获得了“万维网发明者”的美誉。&lt;/li&gt;
+&lt;li&gt;2017 年，他因“发明万维网、第一个浏览器和使万维网得以扩展的基本协议和算法”而获得 2016 年度的图灵奖。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;二html-起手式&#34;&gt;二、HTML 起手式&lt;/h3&gt;
+&lt;p&gt;HTML 起手式如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+ &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+   &amp;lt;head&amp;gt;
+     &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt;
+     &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot; /&amp;gt;
+     &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot; /&amp;gt;
+     &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;
+   &amp;lt;/head&amp;gt;
+   &amp;lt;body&amp;gt;
+
+   &amp;lt;/body&amp;gt;
+ &amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;内容解析：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/code&gt;表示文档类型,告诉浏览器用 HTML 解析网页；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&lt;/code&gt;表示此页面的语言为英文，可将 en 改为 zh-CN，从而将页面语言改为中文简体；&lt;/li&gt;
+&lt;li&gt;HTML 两个子元素之一：head，它的内容不会出现在网页上，而是为网页渲染做准备；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt;&lt;/code&gt;表示此文件的字符编码为 UTF-8,建议统一采用 UTF-8；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot; /&amp;gt;&lt;/code&gt;表示防止页面缩放；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot; /&amp;gt;&lt;/code&gt;如果当前页面在 IE 浏览器显示，告诉 IE 使用最新内核；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&lt;/code&gt;表示此网页的标题为 Document。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;HTML 两个子元素之二：body。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;三章节标签&#34;&gt;三、章节标签&lt;/h3&gt;
+&lt;p&gt;表示文章/书的层级。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;标题 h1~h6&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;HTML 提供了 6 个标签，用于表示文章的标题。按照标题的等级，分为如下六级标题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;h1：一级标题；&lt;/li&gt;
+&lt;li&gt;h2：二级标题；&lt;/li&gt;
+&lt;li&gt;h3：三级标题；&lt;/li&gt;
+&lt;li&gt;h4：四级标题；&lt;/li&gt;
+&lt;li&gt;h5：五级标题；&lt;/li&gt;
+&lt;li&gt;h6：六级标题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;h1&amp;gt;文章标题&amp;lt;/h1&amp;gt;
+ &amp;lt;h2&amp;gt;第一章&amp;lt;/h2&amp;gt;
+ &amp;lt;h3&amp;gt;1.1节&amp;lt;/h3&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;章节 section&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;section&lt;/code&gt;标签表示一个含有主题的独立部分，通常用在文档里面表示一个章节。&lt;code&gt;section&lt;/code&gt;总是多个一起使用，一个页面不能只有一个&lt;code&gt;section&lt;/code&gt;。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;h1&amp;gt;文章标题&amp;lt;/h1&amp;gt;
+ &amp;lt;section&amp;gt;
+   &amp;lt;h2&amp;gt;第一章&amp;lt;/h2&amp;gt;
+   &amp;lt;p&amp;gt;段落内容&amp;lt;/p&amp;gt;
+ &amp;lt;/section&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;文章 article&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;article&lt;/code&gt;标签表示页面里面一段完整的内容，即使页面的其他部分不存在，也具有独立使用的意义，通常用来表示一篇文章或者一个论坛帖子。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;article&amp;gt;
+   &amp;lt;h2&amp;gt;文章标题&amp;lt;/h2&amp;gt;
+   &amp;lt;p&amp;gt;文章内容&amp;lt;/p&amp;gt;
+ &amp;lt;/article&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;段落 p&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;p&lt;/code&gt;标签表示文章的一个段落(paragraph)。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;p&amp;gt;段落内容&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;头部 header&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;header&lt;/code&gt;标签既可以表示整个网页的头部，也可以表示一篇文章或者一个区块的头部。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;header&amp;gt;顶部广告&amp;lt;/header&amp;gt;&lt;/code&gt;可用于显示顶部广告。&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;脚部 footer&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;footer&lt;/code&gt;标签表示网页、文章或章节的尾部，通常包含版权信息或者其他相关信息。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;footer&amp;gt;&amp;amp;copy;XX版权所有。&amp;lt;/footer&amp;gt;&lt;/code&gt;显示为 © XX 版权所有。&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;主要内容 main&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;main&lt;/code&gt;标签表示页面的主体内容，一个页面只能有一个。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+   &amp;lt;header&amp;gt;页眉&amp;lt;/header&amp;gt;
+   &amp;lt;main&amp;gt;
+     &amp;lt;article&amp;gt;文章&amp;lt;/article&amp;gt;
+   &amp;lt;/main&amp;gt;
+   &amp;lt;footer&amp;gt;页尾&amp;lt;/footer&amp;gt;
+ &amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;旁支内容 aside&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;aside&lt;/code&gt;标签用来放置与网页或文章主要内容间接相关的部分,可以用来放置网页侧边栏、文章评论或注释等。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+   &amp;lt;main&amp;gt;主体内容&amp;lt;/main&amp;gt;
+   &amp;lt;aside&amp;gt;侧边栏&amp;lt;/aside&amp;gt;
+ &amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;划分 div&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;div&lt;/code&gt;是一个通用标签，表示一个区块（division）。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+   &amp;lt;header&amp;gt;页眉&amp;lt;/header&amp;gt;
+   &amp;lt;div&amp;gt;
+     &amp;lt;main&amp;gt;
+       &amp;lt;article&amp;gt;文章&amp;lt;/article&amp;gt;
+     &amp;lt;/main&amp;gt;
+     &amp;lt;aside&amp;gt;注释&amp;lt;/aside&amp;gt;
+   &amp;lt;/div&amp;gt;
+   &amp;lt;footer&amp;gt;页尾&amp;lt;/footer&amp;gt;
+ &amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;四全局属性&#34;&gt;四、全局属性&lt;/h3&gt;
+&lt;p&gt;全局属性为所有标签都有的属性。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;class&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;class&lt;/code&gt;属性用于对网页元素进行分类。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;middle&amp;quot;&amp;gt;&lt;/code&gt;为标签添加 class 属性，可进行 style 设置。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;contenteditable&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;HTML 网页的内容默认是用户不能编辑，&lt;code&gt;contenteditable&lt;/code&gt;属性允许用户修改内容。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;div contenteditable&amp;gt;&lt;/code&gt;可使区域内元素被编辑。&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;hidden&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;hidden&lt;/code&gt;属性表示当前的网页元素不再跟页面相关，不会在网页中看到它。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;p hidden&amp;gt;本句不会出现在网页中。&amp;lt;/p&amp;gt;&lt;/code&gt;此代码中的 p 元素不会出现在网页中。&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;id&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;id&lt;/code&gt;属性用于表示全局唯一的标签，不是唯一的用 class。但是 id 的全局唯一性没有保障，就算有两个重复的 id，HTML 也不会提示错误，因此不到万不得已不要使用 id。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;xxx&amp;quot;&amp;gt;
+   &amp;lt;main&amp;gt;
+     &amp;lt;article&amp;gt;文章&amp;lt;/article&amp;gt;
+   &amp;lt;/main&amp;gt;
+     &amp;lt;aside&amp;gt;注释&amp;lt;/aside&amp;gt;
+ &amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;style&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;style&lt;/code&gt;属性用于指定当前元素的 CSS 样式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;style&lt;/code&gt;一般放在 head 中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;style&amp;gt;
+   [class=&amp;quot;middle&amp;quot;] {
+     background: black;
+     color: white;
+   }
+ &amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;将&lt;code&gt;style&lt;/code&gt;放在 body 中时：&lt;/p&gt;
+&lt;p&gt;① 加一句 &lt;code&gt;style{display: block;}&lt;/code&gt;可使 style 在页面上显示；&lt;/p&gt;
+&lt;p&gt;② 将 style 属性设置为 contenteditable 时，可实现在页面显示的 style 中对其进行编辑，改变 style 样式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;style contenteditable&amp;gt;
+   style {
+     display: block;
+     border: 5px solid yellow;
+   }
+   [class=&amp;quot;middle&amp;quot;] {
+     background: black;
+     color: white;
+   }
+ &amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;tabindex&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;tabindex&lt;/code&gt;属性的值是一个整数，表示用户按下 Tab 键的时候，网页焦点转移的顺序。不同的属性值有不同的含义。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tabindex=&amp;quot;-1&amp;quot;&lt;/code&gt;表示不参与 Tab 键对网页元素的遍历；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tabindex=&amp;quot;0&amp;quot;&lt;/code&gt;表示该元素参与 Tab 键的遍历，且顺序为最后；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tabindex=&amp;quot;正整数&amp;quot;&lt;/code&gt;网页元素按照从小到大的顺序（1、2、3、……），参与 Tab 键的遍历。如果多个元素的 tabindex 属性相同，则按照在网页源码里面出现的顺序遍历。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;title&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;title&lt;/code&gt;属性用来为元素添加附加说明。大多数浏览器中，鼠标悬浮在元素上面时，会将&lt;code&gt;title&lt;/code&gt;属性值作为浮动提示显示出来。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在 head 的 style 中添加以下 style&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;style&amp;gt;
+   [class=&amp;quot;top&amp;quot;] {
+     white-space: nowrap; &amp;lt;!--不要换行--&amp;gt;
+     overflow: hidden; &amp;lt;!--溢出就省略--&amp;gt;
+     text-overflow: ellipsis; &amp;lt;!--省略的部分用省略号表示--&amp;gt;
+   }
+ &amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;在 body 中输入如下内容：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;header class=&amp;quot;top&amp;quot; title=&amp;quot;顶部广告的完整内容&amp;quot;&amp;gt;顶部广告&amp;lt;/header&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;通过上面两个操作可实现只显示一行广告，鼠标悬浮在广告上面时显示完整内容的效果。&lt;/p&gt;
+&lt;h3 id=&#34;五内容标签&#34;&gt;五、内容标签&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;ol+li (ordered list + list item)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;ol&lt;/code&gt;标签是一个有序列表容器（ordered list），会在内部的列表项前面产生数字编号。列表项的顺序有意义时，比如排名，就会采用这个标签。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;li&lt;/code&gt;标签表示列表项，用在&lt;code&gt;ol&lt;/code&gt;或&lt;code&gt;ul&lt;/code&gt;之中。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;ol&amp;gt;
+   &amp;lt;li&amp;gt;列表项 A&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;列表项 B&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;列表项 C&amp;lt;/li&amp;gt;
+ &amp;lt;/ol&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;ul+li (unordered list + list item)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;ul&lt;/code&gt;标签是一个无序列表容器（unordered list），会在内部的列表项前面产生实心小圆点，作为列表符号。列表项的顺序无意义时，采用这个标签。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;ul&amp;gt;
+   &amp;lt;li&amp;gt;列表项 A&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;列表项 B&amp;lt;/li&amp;gt;
+   &amp;lt;li&amp;gt;列表项 C&amp;lt;/li&amp;gt;
+ &amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;dl+dt+dd&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;dl&lt;/code&gt;标签是一个块级元素，表示一组术语的列表（description list）。术语名（description term）由&lt;code&gt;dt&lt;/code&gt;标签定义，术语解释（description detail）由&lt;code&gt;dd&lt;/code&gt;标签定义。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;dl&amp;gt;
+   &amp;lt;dt&amp;gt;HTML&amp;lt;/dt&amp;gt;
+   &amp;lt;dd&amp;gt;超文本标记语言&amp;lt;/dd&amp;gt;
+ &amp;lt;/dl&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;pre (preview 的缩写)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;per&lt;/code&gt;标签表示保留原来的格式，可用于使浏览器保留该标签内部原始的换行和空格等特殊符号。浏览器默认以等宽字体显示标签内容。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;pre&amp;gt;left    right&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;hr&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;hr&lt;/code&gt;标签用于分隔两个不同的主题，浏览器会将其渲染为一根水平线。该标签是单独使用的，没有闭合标签。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;第一个主题&amp;lt;/p&amp;gt;
+ &amp;lt;hr&amp;gt;
+ &amp;lt;p&amp;gt;第二个主题&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;br (break 的缩写)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;br&lt;/code&gt;标签让网页产生一个换行效果。该标签是单独使用的，没有闭合标签。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
+   昨夜雨疏风骤, &amp;lt;br&amp;gt;
+   浓睡不消残酒。&amp;lt;br&amp;gt;
+   试问卷帘人,&amp;lt;br&amp;gt;
+   却道海棠依旧。&amp;lt;br&amp;gt;
+   知否,知否, &amp;lt;br&amp;gt;
+   知否应是绿肥红瘦。
+ &amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;a (anchor 的缩写)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;a&lt;/code&gt;标签可用于定义超链接，用户点击后浏览器会跳转到指定的网址。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;https://wikipedia.org/&amp;quot;&amp;gt;维基百科&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;em (emphasis 的缩写)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;em&lt;/code&gt;标签表示强调（emphasis），语气上的强调，浏览器默认会以斜体显示它包含的内容。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;我们&amp;lt;em&amp;gt;本次期末考试&amp;lt;/em&amp;gt;的重点是JavaScript&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;strong&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;strong&lt;/code&gt;标签表示它包含的内容本身具有很强的重要性，需要引起注意。浏览器会以粗体显示内容。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;我们本次期末考试的重点是&amp;lt;strong&amp;gt;JavaScript&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;code&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;code&lt;/code&gt;标签表示标签内容是计算机代码，浏览器默认会以等宽字体显示。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;pre&amp;gt;
+ &amp;lt;code&amp;gt;
+ var a=1;
+ console.log(a);
+ &amp;lt;/code&amp;gt;
+ &amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;11&#34;&gt;
+&lt;li&gt;q (quote 的缩写)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;q&lt;/code&gt;标签表示引用。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
+   莎士比亚的《哈姆雷特》有一句著名的台词：&amp;lt;q&amp;gt;活着还是死亡,这是一个问题。&amp;lt;/q&amp;gt;
+ &amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码显示结果为：
+莎士比亚的《哈姆雷特》有一句著名的台词：&amp;ldquo;活着还是死亡，这是一个问题。&amp;rdquo;&lt;/p&gt;
+&lt;ol start=&#34;12&#34;&gt;
+&lt;li&gt;blockquote&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;blockquote&lt;/code&gt;标签表示引用，它与&lt;code&gt;q&lt;/code&gt;标签的区别，就是会产生换行。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
+   莎士比亚的《哈姆雷特》有一句著名的台词：&amp;lt;blockquote&amp;gt;活着还是死亡,这是一个问题。&amp;lt;/blockquote&amp;gt;
+ &amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码显示结果为：&lt;/p&gt;
+&lt;p&gt;莎士比亚的《哈姆雷特》有一句著名的台词：&lt;/p&gt;
+&lt;p&gt;活着还是死亡,这是一个问题。&lt;/p&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>如何用hugo搭建个人博客</title>
@@ -19,74 +331,74 @@
       <guid>http://localhost:1313/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
       
         <description>&lt;h1 id=&#34;前端学习&#34;&gt;前端学习&lt;/h1&gt;
-&lt;h2 id=&#34;如何用hugo搭建个人博客&#34;&gt;如何用hugo搭建个人博客&lt;/h2&gt;
-&lt;h3 id=&#34;一安装hugo&#34;&gt;一、安装Hugo&lt;/h3&gt;
+&lt;h2 id=&#34;如何用-hugo-搭建个人博客&#34;&gt;如何用 hugo 搭建个人博客&lt;/h2&gt;
+&lt;h3 id=&#34;一安装-hugo&#34;&gt;一、安装 Hugo&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Mac安装方式&lt;/li&gt;
+&lt;li&gt;Mac 安装方式&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;brew install hugo
-hugo version
+ hugo version
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Windows安装方式&lt;/li&gt;
+&lt;li&gt;Windows 安装方式&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;去&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo releases页面&lt;/a&gt;下载hugo_xxxx_Windows-64bit.zip&lt;/li&gt;
-&lt;li&gt;解压，把hugo.exe放到D:\Software\hugo\hugo.exe&lt;/li&gt;
-&lt;li&gt;把D:\Software\hugo\加到PATH&lt;/li&gt;
-&lt;li&gt;重启终端，运行hugo version查看版本&lt;/li&gt;
+&lt;li&gt;去&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo releases 页面&lt;/a&gt;下载 hugo_xxxx_Windows-64bit.zip&lt;/li&gt;
+&lt;li&gt;解压，把 hugo.exe 放到 D:\Software\hugo\hugo.exe&lt;/li&gt;
+&lt;li&gt;把 D:\Software\hugo\加到 PATH&lt;/li&gt;
+&lt;li&gt;重启终端，运行 hugo version 查看版本&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;二搭建博客&#34;&gt;二、搭建博客&lt;/h3&gt;
-&lt;p&gt;进入&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo官网&lt;/a&gt;，点击Quick Start快速开始。从Step2开始抄代码，直到Step7，得到一个public目录，这就是我们的博客站点。此文在Quick Start的基础上做了一些修改。&lt;/p&gt;
+&lt;p&gt;进入&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo 官网&lt;/a&gt;，点击 Quick Start 快速开始。从 Step2 开始抄代码，直到 Step7，得到一个 public 目录，这就是我们的博客站点。此文在 Quick Start 的基础上做了一些修改。&lt;/p&gt;
 &lt;p&gt;具体步骤及详细代码如下：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;创建站点&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;在名为cu2xin.github.io-creator的文件夹中创建一个新的Hugo站点。&lt;/p&gt;
+&lt;p&gt;在名为 cu2xin.github.io-creator 的文件夹中创建一个新的 Hugo 站点。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;hugo new site cu2xin.github.io-creator
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;设置主题&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;找一个喜欢的主题，本文使用的&lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane&#34;&gt;jane主题&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;找一个喜欢的主题，本文使用的&lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane&#34;&gt;jane 主题&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;运行如下代码&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;cd cu2xin.github.io-creator所在路径
-git init
-git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane
-cp themes/jane/exampleSite/config.toml ./
+ git init
+ git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane
+ cp themes/jane/exampleSite/config.toml ./
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;自定义主题&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;ctrl+P打开config.toml。&lt;/p&gt;
+&lt;p&gt;ctrl+P 打开 config.toml。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;将title替换为个人内容，例如：某某的博客。&lt;/li&gt;
+&lt;li&gt;将 title 替换为个人内容，例如：某某的博客。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;title = &amp;quot;Jane - A super concise theme for Hugo&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;设置默认语言，将“en”替换为“zh-cn”，一共有三处替换。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;defaultContentLanguage = &amp;quot;en&amp;quot;           # Default language to use
-[languages.en]
-languageCode = &amp;quot;en&amp;quot;
+ [languages.en]
+ languageCode = &amp;quot;en&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;设置作者，将name替换为个人名字。&lt;/li&gt;
+&lt;li&gt;设置作者，将 name 替换为个人名字。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;[author]                  # essential                     # 必需
-name = &amp;quot;xianmin&amp;quot;
+ name = &amp;quot;xianmin&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;添加内容&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;hugo new post/博客名称.md
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;可按需要修改title、date和draft，注意：1、date只能选择当前或以前的时间，选择将来的时间博客不会显示；2、“draft：ture”表示草稿不会被部署，“draft：false”表示非草稿会被部署，通常博客内容录入完成后改为“draft：false”。&lt;/li&gt;
+&lt;li&gt;可按需要修改 title、date 和 draft，注意：1、date 只能选择当前或以前的时间，选择将来的时间博客不会显示；2、“draft：ture”表示草稿不会被部署，“draft：false”表示非草稿会被部署，通常博客内容录入完成后改为“draft：false”。&lt;/li&gt;
 &lt;li&gt;在下方录入正文内容。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;
-&lt;p&gt;启动Hugo服务器&lt;/p&gt;
+&lt;p&gt;启动 Hugo 服务器&lt;/p&gt;
 &lt;p&gt;运行如下代码:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;hugo server -D  #预览草稿
-hugo server     #预览非草稿
+ hugo server     #预览非草稿
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;建立静态页面&lt;/li&gt;
 &lt;/ol&gt;
@@ -95,61 +407,61 @@ hugo server     #预览非草稿
 &lt;li&gt;运行如下代码：&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;hugo -D            #hugo也可以
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;三博客上传到github&#34;&gt;三、博客上传到GitHub&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;三博客上传到-github&#34;&gt;三、博客上传到 GitHub&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;上传public&lt;/li&gt;
+&lt;li&gt;上传 public&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;在github上新建一个仓库cu2xin.github.io&lt;/li&gt;
-&lt;li&gt;在cu2xin.github.io-creator中新建一个文件.gitignore；&lt;/li&gt;
-&lt;li&gt;在.gitignore中写入/public/；&lt;/li&gt;
+&lt;li&gt;在 github 上新建一个仓库 cu2xin.github.io&lt;/li&gt;
+&lt;li&gt;在 cu2xin.github.io-creator 中新建一个文件.gitignore；&lt;/li&gt;
+&lt;li&gt;在.gitignore 中写入/public/；&lt;/li&gt;
 &lt;li&gt;运行如下代码：&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;cd public
-git init
-git add .
-git commit -v 
-git remote add origin git@github.com:cu2xin/cu2xin.github.io.git
-git push -u origin master
+ git init
+ git add .
+ git commit -v
+ git remote add origin git@github.com:cu2xin/cu2xin.github.io.git
+ git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;查看博客&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;在cu2xin.github.io处点击Settings；&lt;/li&gt;
-&lt;li&gt;在弹出网页中的GitHub pages处找到链接点击查看博客。&lt;/li&gt;
+&lt;li&gt;在 cu2xin.github.io 处点击 Settings；&lt;/li&gt;
+&lt;li&gt;在弹出网页中的 GitHub pages 处找到链接点击查看博客。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;四添加第二个博客&#34;&gt;四、添加第二个博客&lt;/h3&gt;
 &lt;p&gt;运行如下命令添加第二篇博客：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;cd ..
-hugo new post/博客名称2.md      #编辑博客2内容
-hugo
-cd public
-ga .
-gc
-gp
+ hugo new post/博客名称2.md      #编辑博客2内容
+ hugo
+ cd public
+ ga .
+ gc
+ gp
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;五博客备份&#34;&gt;五、博客备份&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;在github上新建一个仓库cu2xin.github.io-creator。&lt;/li&gt;
+&lt;li&gt;在 github 上新建一个仓库 cu2xin.github.io-creator。&lt;/li&gt;
 &lt;li&gt;运行如下代码，查看是否有异常文件。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;git add .
-git status
+ git status
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;查询异常文件中是否有.git文件,可将.git文件删除。&lt;/li&gt;
+&lt;li&gt;查询异常文件中是否有.git 文件,可将.git 文件删除。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;ls -a themes/jane/
-rm -rf themes/jane/.git
+ rm -rf themes/jane/.git
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;运行如下命令完成备份：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;git commit -v
-git remote add origin git@github.com:cu2xin/cu2xin.github.io-creator.git
-git push -u origin master
+ git remote add origin git@github.com:cu2xin/cu2xin.github.io-creator.git
+ git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;注意：如果不小心上传了https，则运行如下命令改为ssh。&lt;/li&gt;
+&lt;li&gt;注意：如果不小心上传了 https，则运行如下命令改为 ssh。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;git remote set-url origin git@github.com:cu2xin/cu2xin.github.io-creator.git
-git push -u origin master
+ git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
 &lt;p&gt;观书有会意处，题其衣裳，以记其事。&lt;/p&gt;
 &lt;/blockquote&gt;
