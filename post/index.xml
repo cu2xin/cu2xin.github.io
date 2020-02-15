@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小醋的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 01 Feb 2020 19:46:43 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2020 01:00:51 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《HTML常用标签》</title>
+      <link>http://localhost:1313/post/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Sat, 15 Feb 2020 01:00:51 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>前端学习 《HTML 常用标签》 一、a 标签的用法 HTML 的 a标签可以创建通向其他网页、文件、电子邮件地址、电话、同一页面内的位置或任何其他 URL 的超链接。</description>
+    </item>
     
     <item>
       <title>《HTML入门笔记1》</title>

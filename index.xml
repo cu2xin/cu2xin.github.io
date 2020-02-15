@@ -6,10 +6,237 @@
     <description>Recent content on 小醋的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 01 Feb 2020 19:46:43 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2020 01:00:51 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《HTML常用标签》</title>
+      <link>http://localhost:1313/post/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Sat, 15 Feb 2020 01:00:51 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      
+        <description>&lt;h1 id=&#34;前端学习&#34;&gt;前端学习&lt;/h1&gt;
+&lt;h2 id=&#34;html-常用标签&#34;&gt;《HTML 常用标签》&lt;/h2&gt;
+&lt;h3 id=&#34;一a-标签的用法&#34;&gt;一、a 标签的用法&lt;/h3&gt;
+&lt;p&gt;HTML 的 &lt;code&gt;a&lt;/code&gt;标签可以创建通向其他网页、文件、电子邮件地址、电话、同一页面内的位置或任何其他 URL 的超链接。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a&lt;/code&gt;标签有如下属性：&lt;/p&gt;
+&lt;h4 id=&#34;1-href&#34;&gt;1. href&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;href&lt;/code&gt; 属性给出超链接指向的网址。它的值应该是一个 URL 或者锚点。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;网址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;链接通过&lt;code&gt;a&lt;/code&gt;标签表示，用户点击后，浏览器会跳转到指定的网址。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;https://google.com&amp;quot;&amp;gt;Google&amp;lt;/a&amp;gt;
+ &amp;lt;a href=&amp;quot;http://google.com&amp;quot;&amp;gt;Google&amp;lt;/a&amp;gt;
+ &amp;lt;a href=&amp;quot;//google.com&amp;quot;&amp;gt;Google&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面三条代码都定义了一个超链接，浏览器将显示三个“Google”，文字下面默认会有下划线，表示这是一个链接。用户点击任一“Google”后，浏览器都将跳转到 Google 首页。推荐使用&lt;code&gt;//google.com&lt;/code&gt;，因为&lt;code&gt;//&lt;/code&gt;最高级，它会自动选择适用 https 还是 http。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a&lt;/code&gt;标签内部不仅可以放置文字，也可以放置其他元素，比如段落、图像、多媒体等等。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;https://google.com&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;google.png&amp;quot;/&amp;gt;&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码中，&lt;code&gt;a&lt;/code&gt;标签内部就是一个图像。用户点击图像，就会跳转到指定网址。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;路径&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;链接也可以指向一个文件，用户点击后，浏览器打开文件内容。&lt;/p&gt;
+&lt;p&gt;① 链接到当前文件中的 a/b/c.html 的两种方式&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;/a/b/c.html&amp;quot;&amp;gt;c.html&amp;lt;/a&amp;gt;
+ &amp;lt;a href=&amp;quot;a/b/c.html&amp;quot;&amp;gt;c.html&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;② 链接到当前目录中的 index.html 的两种方式&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;index.html&amp;lt;/a&amp;gt;
+ &amp;lt;a href=&amp;quot;./index.html&amp;quot;&amp;gt;index.html&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;伪协议&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;① javascript:代码；&lt;/p&gt;
+&lt;p&gt;链接也可以指向一个 javascript 代码，用户点击后，浏览器执行代码。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;javascript:alert(1);&amp;quot;&amp;gt;javascript 伪协议 1&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码中，链接就指向 javascript 代码。点击后，浏览器会执行代码，显示结果为“1”。&lt;/p&gt;
+&lt;p&gt;空的 javascript 代码也是允许的，就像下面这样。点击后，访问 a 标签，但是页面什么都不做。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;javascript:;&amp;quot;&amp;gt;空的伪协议&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;② mailto:邮箱&lt;/p&gt;
+&lt;p&gt;链接也可以指向一个邮件地址，使用&lt;code&gt;mailto&lt;/code&gt;协议。用户点击后，浏览器会打开本机默认的邮件程序，让用户向指定的地址发送邮件。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;mailto:143****038@qq.com&amp;quot;&amp;gt;发邮件给XX&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码中，链接就指向邮件地址。点击后，浏览器会打开一个邮件地址，让你可以向 143****038@qq.com 发送邮件。&lt;/p&gt;
+&lt;p&gt;不指定邮箱也是允许的，就像下面这样。这时用户自己在邮件程序里面，填写想要发送的邮箱，通常用于邮件分享网页。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;mailto:&amp;quot;&amp;gt;发邮件&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;③ tel:手机号&lt;/p&gt;
+&lt;p&gt;如果是手机浏览的页面，还可以使用&lt;code&gt;tel&lt;/code&gt;协议，创建电话链接。用户点击该链接，会唤起电话，可以进行拨号。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;tel:158****2456&amp;quot;&amp;gt;打电话给158****2456&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;id&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;跳转到内部锚点。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;#xxx&amp;quot;&amp;gt;查看xxx&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码中，&lt;code&gt;href&lt;/code&gt;属性的值是#加上锚点名称。点击后，浏览器会自动滚动，停在当前页面里面 xxx 锚点所在的位置。&lt;/p&gt;
+&lt;h4 id=&#34;2target&#34;&gt;2.target&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;target&lt;/code&gt;属性指定如何展示打开的链接。它可以是在指定的窗口打开，也可以在&lt;code&gt;iframe&lt;/code&gt;里面打开。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_self&lt;/code&gt;:在当前窗口打开，如果没有指定属性&lt;code&gt;_self&lt;/code&gt;为默认值。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;//baidu.com&amp;quot; target=&amp;quot;_self&amp;quot;&amp;gt;self&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_blank&lt;/code&gt;:在新窗口打开。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;//baidu.com&amp;quot; target=&amp;quot;_block&amp;quot;&amp;gt;blank&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_parent&lt;/code&gt;：在上层窗口打开，这通常用于从父窗口打开的子窗口，或者&lt;code&gt;iframe&lt;/code&gt;里面的链接。如果当前窗口没有上层窗口，这个值等同于&lt;code&gt;_self&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;//baidu.com&amp;quot; target=&amp;quot;_parent&amp;quot;&amp;gt;parent&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_top&lt;/code&gt;：在顶层窗口打开。如果当前窗口就是顶层窗口，这个值等同于&lt;code&gt;_self&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;//baidu.com&amp;quot; target=&amp;quot;_top&amp;quot;&amp;gt;top&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;target&lt;/code&gt;还能实现在指定的窗口打开。下面代码中，两个链接都在名叫 test 的窗口打开。首先点击链接 Google，浏览器发现没有叫做 test 的窗口，就新建一个窗口，起名为 test，在该窗口打开 google.com。然后，用户又点击链接 baidu，由于已经存在 test 窗口，浏览器就在该窗口打开 baidu.com，取代里面已经打开的 google.com。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;//google.com&amp;quot; target=&amp;quot;test&amp;quot;&amp;gt;Google&amp;lt;/a&amp;gt;
+ &amp;lt;a href=&amp;quot;//baidu.com&amp;quot; target=&amp;quot;test&amp;quot;&amp;gt;baidu&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;二img-标签的用法&#34;&gt;二、img 标签的用法&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;img&lt;/code&gt;标签用于发出 get 请求，展示一张图片。它是单独使用的，没有闭合标签。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;img&lt;/code&gt;标签有如下属性：&lt;/p&gt;
+&lt;h4 id=&#34;1-src&#34;&gt;1. src&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;src&lt;/code&gt;属性指定图片的网址，下例是相对 URL，表示图片与网页在同一个目录。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;img src=&amp;quot;蛋糕.png&amp;quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;2-alt&#34;&gt;2. alt&lt;/h4&gt;
+&lt;p&gt;alt 属性用来设定图片的文字说明。图片不显示时（比如下载失败，或用户关闭图片加载），图片的位置上会显示该文本。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;img src=&amp;quot;蛋糕.png&amp;quot; alt=&amp;quot;蛋糕&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码中，alt 是图片的说明。图片下载失败时，浏览器会在图片位置，显示文字“蛋糕”。&lt;/p&gt;
+&lt;h4 id=&#34;3-widthheight&#34;&gt;3. width/height&lt;/h4&gt;
+&lt;p&gt;图片默认以原始大小插入网页，&lt;code&gt;width&lt;/code&gt;属性和&lt;code&gt;height&lt;/code&gt;属性可以指定图片显示时的宽度和高度，单位是像素或百分比。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;img src=&amp;quot;蛋糕.png&amp;quot; width=&amp;quot;200&amp;quot; height=&amp;quot;150&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码中，&lt;code&gt;width&lt;/code&gt;属性指定图片显示的宽度为 200 像素，&lt;code&gt;height&lt;/code&gt;属性指定显示高度为 150 像素。&lt;/p&gt;
+&lt;p&gt;如果&lt;code&gt;width&lt;/code&gt;和&lt;code&gt;height&lt;/code&gt;同时设置，可能造成图片变形，通常&lt;code&gt;width&lt;/code&gt;和&lt;code&gt;height&lt;/code&gt;只设置其中一个，这时浏览器会根据图片的原始大小，自动设置对应比例的图片宽度或高度。&lt;/p&gt;
+&lt;h3 id=&#34;三table-标签的用法&#34;&gt;三、table 标签的用法&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;table&lt;/code&gt;是一个块级容器标签，所有表格内容都要放在这个标签里面。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;table&lt;/code&gt;有如下子元素：&lt;/p&gt;
+&lt;h4 id=&#34;1caption&#34;&gt;1.caption&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;caption&lt;/code&gt;总是&lt;code&gt;table&lt;/code&gt;里面的第一个子元素，表示表格的标题。该元素是可选的。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;caption&amp;gt;二年级一班成绩表&amp;lt;/caption&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;2theadtbodytfoot&#34;&gt;2.thead、tbody、tfoot&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;thead&lt;/code&gt;、&lt;code&gt;tbody&lt;/code&gt;、&lt;code&gt;tfoot&lt;/code&gt;都是块级容器元素，且都是&lt;code&gt;table&lt;/code&gt;的一级子元素，分别表示表头、表体和表尾。这三个元素都是可选的，在源代码中没有先后顺序要求。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
+   &amp;lt;thead&amp;gt;... ...&amp;lt;/thead&amp;gt;
+   &amp;lt;tbody&amp;gt;... ...&amp;lt;/tbody&amp;gt;
+   &amp;lt;tfoot&amp;gt;... ...&amp;lt;/tfoot&amp;gt;
+ &amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;3tr&#34;&gt;3.tr&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;tr&lt;/code&gt;标签表示表格的一行（table row）。如果表格有&lt;code&gt;thead&lt;/code&gt;、&lt;code&gt;tbody&lt;/code&gt;、&lt;code&gt;tfoot&lt;/code&gt;，那么&lt;code&gt;tr&lt;/code&gt;就放在这些容器元素之中，否则直接放在&lt;code&gt;table&lt;/code&gt;的下一级。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
+   &amp;lt;tr&amp;gt;...&amp;lt;/tr&amp;gt;
+   &amp;lt;tr&amp;gt;...&amp;lt;/tr&amp;gt;
+ &amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码表示表格共有 2 行。&lt;/p&gt;
+&lt;h4 id=&#34;4thtd&#34;&gt;4.th、td&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;th&lt;/code&gt;和&lt;code&gt;td&lt;/code&gt;都用来定义表格的单元格。其中，&lt;code&gt;th&lt;/code&gt;是标题单元格，&lt;code&gt;td&lt;/code&gt;是数据单元格。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
+       &amp;lt;thead&amp;gt;
+         &amp;lt;tr&amp;gt;&amp;lt;th&amp;gt;&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;张小红&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;小明&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;小颖&amp;lt;/th&amp;gt;&amp;lt;/tr&amp;gt;
+       &amp;lt;/thead&amp;gt;
+       &amp;lt;tbody&amp;gt;
+         &amp;lt;tr&amp;gt;&amp;lt;th&amp;gt;数学&amp;lt;/th&amp;gt;&amp;lt;td&amp;gt;61&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;91&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;85&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+         &amp;lt;tr&amp;gt;&amp;lt;th&amp;gt;语文&amp;lt;/th&amp;gt;&amp;lt;td&amp;gt;79&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;82&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;92&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+         &amp;lt;tr&amp;gt;&amp;lt;th&amp;gt;英语&amp;lt;/th&amp;gt;&amp;lt;td&amp;gt;100&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;97&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;87&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+       &amp;lt;/tbody&amp;gt;
+       &amp;lt;tfoot&amp;gt;
+         &amp;lt;tr&amp;gt;&amp;lt;th&amp;gt;总分&amp;lt;/th&amp;gt;&amp;lt;td&amp;gt;240&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;270&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;264&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+       &amp;lt;/tfoot&amp;gt;
+     &amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码中，表格为一个成绩单，第一行是标题行，所以使用&lt;code&gt;th&lt;/code&gt;；第二行和第五行中的分数是数据，所以使用&lt;code&gt;td&lt;/code&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;table标签的相关样式&#34;&gt;&lt;code&gt;table&lt;/code&gt;标签的相关样式&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;table-layout&lt;/code&gt;：是 CSS 属性，定义用于布局表格单元格、行和列的算法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;table-layout&lt;/code&gt;取值为&lt;code&gt;auto&lt;/code&gt;时，表示采用自动表格布局算法对表格布局，表格及单元格的宽度取决于其包含的内容。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;table {
+ table-layout: auto;
+ }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;table-layout&lt;/code&gt;取值为&lt;code&gt;fixed&lt;/code&gt;时，表格和列的宽度通过表格的宽度来设置，某一列的宽度仅由该列首行的单元格决定。在当前列中，该单元格所在行之后的行并不会影响整个列宽。通常可结合&lt;code&gt;width&lt;/code&gt;属性来限制表格的宽。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;table {
+  table-layout: fixed;
+  width: 120px;
+ }
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;border-collapse&lt;/code&gt;： 是 CSS 属性，用来决定表格的边框是分开的还是合并的。在分隔模式下，相邻的单元格都拥有独立的边框。在合并模式下，相邻单元格共享边框。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;border-collapse&lt;/code&gt;取值为&lt;code&gt;collapse&lt;/code&gt;时，相邻的单元格共用同一条边框。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;table {
+ border-collapse: collapse;
+ }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;border-collapse&lt;/code&gt;取值为&lt;code&gt;separate&lt;/code&gt;时，每个单元格拥有独立的边框，它是默认值。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;table {
+ border-collapse: separate;
+ }
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;border-spacing&lt;/code&gt;:指定相邻单元格边框之间的距离，该属性只适用于&lt;code&gt;border-collapse&lt;/code&gt;值是&lt;code&gt;separate&lt;/code&gt;的时候。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;table {
+ border-spacing: 2px;
+ }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码表示单元格边框之间的距离为 2 像素。&lt;/p&gt;
+&lt;h3 id=&#34;四表单标签的用法&#34;&gt;四、表单标签的用法&lt;/h3&gt;
+&lt;h4 id=&#34;1form-标签的用法&#34;&gt;1.form 标签的用法&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;form&lt;/code&gt;标签用来定义一个表单，所有表单内容放到这个容器元素之中。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;form&lt;/code&gt;有如下属性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;action&lt;/code&gt;：服务器接收数据的 URL。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;method&lt;/code&gt;：提交数据的 HTTP 方法，可能的值有&lt;code&gt;POST&lt;/code&gt;（表单数据作为 HTTP 数据体发送），&lt;code&gt;GET&lt;/code&gt;（表单数据作为 URL 的查询字符串发送）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;autocomplete&lt;/code&gt;：如果用户没有填写某个控件，浏览器是否可以自动填写该值。它的可能取值分别为&lt;code&gt;off&lt;/code&gt;（不自动填写）和&lt;code&gt;on&lt;/code&gt;（自动填写）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;target&lt;/code&gt;：在哪个窗口展示服务器返回的数据。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;form action=&amp;quot;https://example.com/api&amp;quot; method=&amp;quot;post&amp;quot; autocomplete=&amp;quot;on&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;
+   &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;user&amp;quot;&amp;gt;
+   &amp;lt;input type=&amp;quot;submit&amp;quot;&amp;gt;
+ &amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码就是一个表单，包含一个文本输入框和一个提交按钮，文本输入框的&lt;code&gt;name&lt;/code&gt;属性是&lt;code&gt;user&lt;/code&gt;。用户在文本输入框里面，输入用户名，比如 Lucy，然后点击提交按钮，浏览器就会向服务器https://example.com/api发送一个 POST 请求，发送 user=Lucy 这样一段数据，并在一个空白窗口展示服务器返回的数据。&lt;/p&gt;
+&lt;h4 id=&#34;2input-标签的用法&#34;&gt;2.input 标签的用法&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;input&lt;/code&gt;标签是一个行内元素，用来接收用户的输入。它是一个单独使用的标签，没有结束标志。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;input&lt;/code&gt;有多种类型，取决于&lt;code&gt;type&lt;/code&gt;属性的值。&lt;code&gt;type&lt;/code&gt;属性有如下取值：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;type=&amp;quot;text&amp;quot;&lt;/code&gt;：普通的文本输入框，用来输入单行文本。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;input name=&amp;quot;username&amp;quot; type=&amp;quot;text&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;type=&amp;quot;email&amp;quot;&lt;/code&gt;：一个只能输入电子邮箱的文本输入框。表单提交之前，浏览器会自动验证是否符合电子邮箱的格式，如果不符合就会显示提示，无法提交到服务器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;input name=&amp;quot;email&amp;quot; type=&amp;quot;email&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;type=&amp;quot;password&amp;quot;&lt;/code&gt;：一个密码输入框。用户的输入会被遮挡，字符通常显示星号“*”或点“·”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;input name=&amp;quot;password&amp;quot; type=&amp;quot;password&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;type=&amp;quot;radio&amp;quot;&lt;/code&gt;：单选框，表示一组选择之中，只能选中一项。单选框通常为一个小圆圈，选中时会被填充或突出显示。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;input name=&amp;quot;gender&amp;quot; type=&amp;quot;radio&amp;quot; /&amp;gt;男
+ &amp;lt;input name=&amp;quot;gender&amp;quot; type=&amp;quot;radio&amp;quot; /&amp;gt;女
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;type=&amp;quot;checkbox&amp;quot;&lt;/code&gt;：复选框，允许选择或取消选择该选项。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;input name=&amp;quot;hobby&amp;quot; type=&amp;quot;checkbox&amp;quot; /&amp;gt;网球
+ &amp;lt;input name=&amp;quot;hobby&amp;quot; type=&amp;quot;checkbox&amp;quot; /&amp;gt;篮球
+ &amp;lt;input name=&amp;quot;hobby&amp;quot; type=&amp;quot;checkbox&amp;quot; /&amp;gt;乒乓球
+ &amp;lt;input name=&amp;quot;hobby&amp;quot; type=&amp;quot;checkbox&amp;quot; /&amp;gt;游泳
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;type=&amp;quot;file&amp;quot;&lt;/code&gt;：一个文件选择框，常用于文件上传功能。默认只能选择一个文件，添加&lt;code&gt;multiple&lt;/code&gt;属性后允许选择多个文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;input name=&amp;quot;file&amp;quot; type=&amp;quot;file&amp;quot; /&amp;gt;
+ &amp;lt;input name=&amp;quot;files&amp;quot; type=&amp;quot;file&amp;quot; multiple /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;type=&amp;quot;submit&amp;quot;&lt;/code&gt;：表单的提交按钮。用户点击这个按钮，就会把表单提交给服务器。如果不指定&lt;code&gt;value&lt;/code&gt;属性，浏览器会在提交按钮上显示默认的文字，通常是“提交”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;保存并提交&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;注意：&lt;code&gt;form&lt;/code&gt;里面放一个&lt;code&gt;type=&amp;quot;submit&amp;quot;&lt;/code&gt;才能触发 submit 事件。&lt;/p&gt;
+&lt;h4 id=&#34;更多type属性请前往html-教程httpswangdoccomhtmlformhtml学习&#34;&gt;更多&lt;code&gt;type&lt;/code&gt;属性请前往&lt;a href=&#34;https://wangdoc.com/html/form.html&#34;&gt;HTML 教程&lt;/a&gt;学习。&lt;/h4&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>《HTML入门笔记1》</title>
