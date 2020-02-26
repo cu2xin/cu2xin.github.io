@@ -6,10 +6,331 @@
     <description>Recent content on 小醋的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 15 Feb 2020 01:00:51 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 23:49:33 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《CSS  知识总结》</title>
+      <link>http://localhost:1313/post/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 24 Feb 2020 23:49:33 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/css-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
+      
+        <description>&lt;h1 id=&#34;前端学习&#34;&gt;前端学习&lt;/h1&gt;
+&lt;h2 id=&#34;css-知识总结&#34;&gt;《CSS 知识总结》&lt;/h2&gt;
+&lt;h3 id=&#34;一css-基础知识&#34;&gt;一、CSS 基础知识&lt;/h3&gt;
+&lt;h4 id=&#34;1-文档流normal-flow&#34;&gt;1. 文档流（Normal Flow）&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;inline&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;流动方向：元素从左到右，到达最右边才会换行，遇到行尾折行；&lt;/p&gt;
+&lt;p&gt;宽度：为内部 inline 元素的和，不能用 width 指定；&lt;/p&gt;
+&lt;p&gt;高度：由 line-height 间接确定，跟 height 无关；没有内容的 inline 元素高度为 line-height，不为 0。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;block&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;流动方向：元素从上到下，每一个都另起一行；&lt;/p&gt;
+&lt;p&gt;宽度：默认自动计算宽度，可用 width 指定；&lt;/p&gt;
+&lt;p&gt;高度：由内部文档流元素决定，可以设 height，没有内容的 block 元素高度为 0。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;inline-block&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;流动方向：从左到右，但是像 block 元素一样不会跨行。&lt;/p&gt;
+&lt;p&gt;宽度：为内部元素的和，可用 width 指定。&lt;/p&gt;
+&lt;p&gt;高度：由内部文档流元素决定，可以设 height；&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;脱离文档流的方式：① float；② position 为 absolute 或者 fixed。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-css-盒模型&#34;&gt;2. CSS 盒模型&lt;/h4&gt;
+&lt;p&gt;CSS 盒模型有两种：&lt;code&gt;content-box&lt;/code&gt; 和 &lt;code&gt;border-box&lt;/code&gt;，默认为 &lt;code&gt;content-box&lt;/code&gt;，但一般优先使用 &lt;code&gt;border-box&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;content-box&lt;/code&gt; 的宽度 width 表示内容区的宽度，不包含 &lt;code&gt;padding&lt;/code&gt; 和 &lt;code&gt;border&lt;/code&gt;；&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;border-box&lt;/code&gt; 的宽度 width 表示内容区 + &lt;code&gt;padding&lt;/code&gt; + &lt;code&gt;border&lt;/code&gt; 的总和。&lt;/p&gt;
+&lt;h4 id=&#34;3-常用代码&#34;&gt;3. 常用代码&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;list-style:none;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;去掉 &lt;code&gt;ol&lt;/code&gt; 或者 &lt;code&gt;ul&lt;/code&gt; 中的 &lt;code&gt;li&lt;/code&gt; 前面的数字或者圆点。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;vertical-align:middle;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;去掉图片下面的多余背景色，取值为 top 或者 bottom 也可实现该功能。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;outline:1px solid red;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;代替 border，取消 border 对 width 的干扰。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;margin:0 auto;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;可实现居中，但是会覆盖上下的 margin。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;margin-left:auto;margin-right:auto;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;可实现块元素居中，且不会覆盖上下的 margin。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;transform:translate(-50%,-50%);&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;可做绝对定位元素的居中。&lt;/p&gt;
+&lt;h3 id=&#34;二css-布局&#34;&gt;二、CSS 布局&lt;/h3&gt;
+&lt;h4 id=&#34;1-选择布局方式&#34;&gt;1. 选择布局方式&lt;/h4&gt;
+&lt;p&gt;Float 布局：需要兼容 IE9；&lt;/p&gt;
+&lt;p&gt;Flex 布局：不需要兼容 IE9，需兼容老版浏览器；&lt;/p&gt;
+&lt;p&gt;Grid 布局：不需要兼容 IE9，且只兼容最新浏览器。&lt;/p&gt;
+&lt;h4 id=&#34;2-float-布局&#34;&gt;2. Float 布局&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;在子元素上加 float:left 和 width；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;在父元素上加.clearfix。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;.clearfix:after{
+  content:&#39;&#39;;
+  display:block;
+  clear:both;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;3-flex-布局&#34;&gt;3. Flex 布局&lt;/h4&gt;
+&lt;p&gt;Flex 布局包括容器（container）和项目（items）。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;flex container 属性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;① &lt;code&gt;display:flex;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;让一个元素变成 flex 容器。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.container {
+  display: flex;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;② 改变 items 流动方向&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.container {
+  flex-direction: row/row-reverse/column/colum-reverse;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;row&lt;/code&gt;: 元素摆放的方向和文字方向一致。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;row-reverse&lt;/code&gt;: 元素摆放的方向和文字方向相反。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;column&lt;/code&gt;: 元素从上放到下。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;column-reverse&lt;/code&gt;: 元素从下放到上。&lt;/p&gt;
+&lt;p&gt;③ 改变折行&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.container {
+  flex-wrap: nowrap/wrap/wrap-reverse;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;nowrap&lt;/code&gt;: 所有的元素都在一行。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;wrap&lt;/code&gt;: 元素自动换成多行。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;wrap-reverse&lt;/code&gt;: 元素自动换成逆序的多行。&lt;/p&gt;
+&lt;p&gt;注意：&lt;code&gt;flex-direction&lt;/code&gt; 和 &lt;code&gt;flex-wrap&lt;/code&gt; 可以进行缩写，例如：&lt;code&gt;flex-flow：column wrap;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;④ 主轴对齐方式&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.container {
+  justify-content: flex-start/flex-end/center/space-between/space-around/space-evenly;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;flex-start&lt;/code&gt;: 元素和容器的左端对齐。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-end&lt;/code&gt;: 元素和容器的右端对齐。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;center&lt;/code&gt;: 元素在容器里居中。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;space-between&lt;/code&gt;:元素之间保持相等的距离。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;space-around&lt;/code&gt;:元素周围保持相等的距离。&lt;/p&gt;
+&lt;p&gt;当要使两个子元素左右对齐时，可使用 &lt;code&gt;justify-content:space-between;&lt;/code&gt; 或者在后一个子元素上加 &lt;code&gt;margin-left:auto;&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;⑤ 次轴对齐&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.container {
+  align-items: stretch/flex-start/flex-end/center;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;stretch&lt;/code&gt;: 元素被拉伸以填满整个容器。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-start&lt;/code&gt;: 元素与容器的顶部对齐。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-end&lt;/code&gt;: 元素与容器的底部对齐。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;center&lt;/code&gt;: 元素纵向居中。&lt;/p&gt;
+&lt;p&gt;⑥ 多行内容&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.container {
+  align-content: flex-start/flex-end/center/stretch/space-between/space-around;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;flex-start&lt;/code&gt;: 多行都集中在顶部。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;flex-end&lt;/code&gt;: 多行都集中在底部。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;center&lt;/code&gt;: 多行居中。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;stretch&lt;/code&gt;: 每一行都被拉伸以填满容器。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;space-between&lt;/code&gt;: 行与行之间保持相等距离。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;space-around&lt;/code&gt;: 每行的周围保持相等距离。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;flex item 属性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;① &lt;code&gt;order&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;order&lt;/code&gt;元素的属性默认值为 0，设置 &lt;code&gt;order&lt;/code&gt; 可改变 &lt;code&gt;item&lt;/code&gt; 的顺序，数字越小越靠前，负数在 0 之前。&lt;/p&gt;
+&lt;p&gt;② &lt;code&gt;flex-grow&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;控制如何增大，数字越大增的越快。&lt;/p&gt;
+&lt;p&gt;③ &lt;code&gt;flex-shrink&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;控制如何缩小，数字越大缩的越快。&lt;code&gt;flex-shrink:0;&lt;/code&gt; 防止变瘦。&lt;/p&gt;
+&lt;p&gt;④ &lt;code&gt;align-self&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;可定制 &lt;code&gt;align-items&lt;/code&gt; ，这个属性接受和 &lt;code&gt;align-items&lt;/code&gt; 一样的值。&lt;/p&gt;
+&lt;h4 id=&#34;4-grid-布局&#34;&gt;4. Grid 布局&lt;/h4&gt;
+&lt;p&gt;Grid 布局包括容器（container）和项目（items）。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;grid container 属性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;① &lt;code&gt;display:grid;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;让一个元素变成 grid 容器。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.container {
+  display: grid;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;② 行和列&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.container {
+  grid-template-rows: 25% 100px auto;
+  grid-template-columns: 40px 50px auto 50px 40px;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码定义了一个 3 行 5 列的布局。&lt;/p&gt;
+&lt;p&gt;③ &lt;code&gt;grid-column-start&lt;/code&gt; 和 &lt;code&gt;grid-column-end&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;若仅使用 &lt;code&gt;grid-column-start&lt;/code&gt;，网格默认只占一列。同时使用 &lt;code&gt;grid-column-start&lt;/code&gt;和 &lt;code&gt;grid-column-end&lt;/code&gt; 可将网格拓展到多列。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;grid-column-start&lt;/code&gt;和 &lt;code&gt;grid-column-end&lt;/code&gt;的缩写为：&lt;code&gt;grid-column:开始行/结束行;&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;grid-row-start&lt;/code&gt; 就像 &lt;code&gt;grid-column-start&lt;/code&gt; 一样，只不过是在垂直方向指定起始位置。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.container {
+  grid-column-start: 2;
+  grid-column-end: span 2;
+}
+.container {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;可以用&lt;code&gt;span&lt;/code&gt;来指定所要跨越的宽度，以上两组代码实现功能一样。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;grid-column&lt;/code&gt; 和 &lt;code&gt;grid-row&lt;/code&gt; 的缩写是 &lt;code&gt;grid-area&lt;/code&gt;，&lt;code&gt;grid-area:开始行/开始列/结束行/结束列;&lt;/code&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;flex item 属性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;order&lt;/code&gt;元素的属性默认值为 0，设置 &lt;code&gt;order&lt;/code&gt; 可改变 &lt;code&gt;item&lt;/code&gt; 的顺序，数字越小越靠前，负数在 0 之前。&lt;/p&gt;
+&lt;h3 id=&#34;三css-定位&#34;&gt;三、CSS 定位&lt;/h3&gt;
+&lt;h4 id=&#34;1-position-属性&#34;&gt;1. position 属性&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;position:static&lt;/code&gt;：默认值，元素出现在正常的文档流中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;position:relative&lt;/code&gt;：相对定位，不脱离文档流也不影响其他元素，元素是在文档中的正常位置偏移给定的值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;position:absolute&lt;/code&gt;：绝对定位，元素脱离了文档流，并不为元素预留空间。通过指定元素相对于最近的非 static 定位祖先元素的偏移，来确定元素位置。绝对定位的元素可以设置外边距（margins），且不会与其他边距合并。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;position:fixed&lt;/code&gt;：固定定位，元素脱离了文档流，并不为元素预留空间。通过指定元素相对于屏幕视口（viewport）的位置来指定元素位置。但是会被某些属性影响，例如：&lt;code&gt;transform:scale(0.9);&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;position:sticky&lt;/code&gt;：粘滞定位,可以被认为是相对定位和固定定位的混合。元素在跨越特定阈值前为相对定位，之后为固定定位。偏移值不会影响任何其他元素的位置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;强调：&lt;/p&gt;
+&lt;p&gt;① 如果写了 absolute，一般都得补一个 relative；&lt;/p&gt;
+&lt;p&gt;② 如果写了 absolute 或者 fixed，一定要补 top/bottom 和 left/right；&lt;/p&gt;
+&lt;p&gt;③ sticky 兼容性很差，通常得加一句 position:-webkit-sticky。&lt;/p&gt;
+&lt;h4 id=&#34;2-创建层叠上下文&#34;&gt;2. 创建层叠上下文&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;根元素（HTML）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;position:fixed;&lt;/code&gt;；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;z-index&lt;/code&gt; 值不为“auto”的绝对/相对定位；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个 &lt;code&gt;z-index&lt;/code&gt; 值不为“auto”的 flex 项目（flex item），即：父元素 &lt;code&gt;display:flex/inline-flex;&lt;/code&gt;；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;opacity&lt;/code&gt; 属性值小于 1 时，例如：&lt;code&gt;opacity:0.5;&lt;/code&gt;；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;transform&lt;/code&gt; 属性值不为“none”的元素。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;四浏览器渲染原理&#34;&gt;四、浏览器渲染原理&lt;/h3&gt;
+&lt;h4 id=&#34;1-渲染步骤&#34;&gt;1. 渲染步骤&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;根据 HTML 构建 HTML 树（DOM);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;根据 CSS 构建 CSS 树（CSSOM）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将两棵树合并成一颗渲染树（render tree）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Layout 布局，包括文档流、盒模型、计算大小和位置；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Paint 绘制，把边框颜色、文字颜色、阴影等画出来；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Compose 合成，根据层叠关系展示画面。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-渲染方式&#34;&gt;2. 渲染方式&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;JS/CSS&amp;gt;样式&amp;gt;布局&amp;gt;绘制&amp;gt;合成&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;JS/CSS&amp;gt;样式&amp;gt;绘制&amp;gt;合成&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;JS/CSS&amp;gt;样式&amp;gt;合成&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://csstriggers.com/&#34;&gt;查看元素属性触发什么流程&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;五css-动画&#34;&gt;五、CSS 动画&lt;/h3&gt;
+&lt;h4 id=&#34;1-transform&#34;&gt;1. transform&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;transform&lt;/code&gt; 属性可对给定元素实现平移，缩放，旋转或倾斜转换。但是只能转换由盒模型定位的元素。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;transform:none&lt;/code&gt;： 默认值，不做任何变换。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;transform:translate&lt;/code&gt;：位移，translateX 横向移动，translateY 纵向移动，translateZ 垂直于平面运。translateX 和 translateY 可缩写为 translate；translateX 、translateY 和 translateZ 可缩写为 translate3d。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;transform:scale&lt;/code&gt;：缩放，scaleX 横向缩放,scaleY 纵向缩放，缩写为 scale，因为容易出现模糊而用的比较少。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;transform:rotate&lt;/code&gt;：默认为沿 Z 轴旋转，一般用于 360 度旋转制作 loading，表示加载中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;transform:skew&lt;/code&gt;：skewX 为 X 方向倾斜度数，skewY 为 Y 方向倾斜度数，它们的缩写为 skew。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-transition&#34;&gt;2. transition&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;transition&lt;/code&gt; 可用于补充转换前和转换后的中间帧，从而实现动画效果。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;transition&lt;/code&gt;语法：transition：属性名 时长 过渡方式 延迟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;可以用逗号分隔两个不同属性，例如：&lt;code&gt;transition:left 200ms,top 400ms;&lt;/code&gt;；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可以用 all 代表所有属性；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;过渡方式：linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier/step-start/step-end/steps；&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-animation&#34;&gt;3. animation&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;animation&lt;/code&gt; 属性是 &lt;code&gt;animation-name&lt;/code&gt;，&lt;code&gt;animation-duration&lt;/code&gt;, &lt;code&gt;animation-timing-function&lt;/code&gt;，&lt;code&gt;animation-delay&lt;/code&gt;，&lt;code&gt;animation-iteration-count&lt;/code&gt;，&lt;code&gt;animation-direction&lt;/code&gt;，&lt;code&gt;animation-fill-mode&lt;/code&gt; 和 &lt;code&gt;animation-play-state&lt;/code&gt; 属性的一个简写属性形式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;animation&lt;/code&gt; 语法：animation:时长/过渡方式/延迟/次数/方向/填充模式/是否暂停/动画名;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;时长：1s 或者 1000ms&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;过渡方式：跟 &lt;code&gt;transition&lt;/code&gt; 取值一样&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;次数：定义动画几次，infinite 表示无限次&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;方向：reverse（反向）/alternate（交替的，先去后回）/alternate-reverse（交替的，先回后去）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;填充模式：none/forwards（向前的，指不要再回来）/backwards/both&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;是否暂停：paused/running&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>《HTML常用标签》</title>
@@ -70,7 +391,7 @@
 &lt;p&gt;跳转到内部锚点。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;#xxx&amp;quot;&amp;gt;查看xxx&amp;lt;/a&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码中，&lt;code&gt;href&lt;/code&gt;属性的值是#加上锚点名称。点击后，浏览器会自动滚动，停在当前页面里面 xxx 锚点所在的位置。&lt;/p&gt;
-&lt;h4 id=&#34;2target&#34;&gt;2.target&lt;/h4&gt;
+&lt;h4 id=&#34;2-target&#34;&gt;2. target&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;target&lt;/code&gt;属性指定如何展示打开的链接。它可以是在指定的窗口打开，也可以在&lt;code&gt;iframe&lt;/code&gt;里面打开。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;_self&lt;/code&gt;:在当前窗口打开，如果没有指定属性&lt;code&gt;_self&lt;/code&gt;为默认值。&lt;/li&gt;
@@ -109,24 +430,24 @@
 &lt;h3 id=&#34;三table-标签的用法&#34;&gt;三、table 标签的用法&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;table&lt;/code&gt;是一个块级容器标签，所有表格内容都要放在这个标签里面。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;table&lt;/code&gt;有如下子元素：&lt;/p&gt;
-&lt;h4 id=&#34;1caption&#34;&gt;1.caption&lt;/h4&gt;
+&lt;h4 id=&#34;1-caption&#34;&gt;1. caption&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;caption&lt;/code&gt;总是&lt;code&gt;table&lt;/code&gt;里面的第一个子元素，表示表格的标题。该元素是可选的。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;caption&amp;gt;二年级一班成绩表&amp;lt;/caption&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;2theadtbodytfoot&#34;&gt;2.thead、tbody、tfoot&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;2-theadtbodytfoot&#34;&gt;2. thead、tbody、tfoot&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;thead&lt;/code&gt;、&lt;code&gt;tbody&lt;/code&gt;、&lt;code&gt;tfoot&lt;/code&gt;都是块级容器元素，且都是&lt;code&gt;table&lt;/code&gt;的一级子元素，分别表示表头、表体和表尾。这三个元素都是可选的，在源代码中没有先后顺序要求。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
    &amp;lt;thead&amp;gt;... ...&amp;lt;/thead&amp;gt;
    &amp;lt;tbody&amp;gt;... ...&amp;lt;/tbody&amp;gt;
    &amp;lt;tfoot&amp;gt;... ...&amp;lt;/tfoot&amp;gt;
  &amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;3tr&#34;&gt;3.tr&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;3-tr&#34;&gt;3. tr&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;tr&lt;/code&gt;标签表示表格的一行（table row）。如果表格有&lt;code&gt;thead&lt;/code&gt;、&lt;code&gt;tbody&lt;/code&gt;、&lt;code&gt;tfoot&lt;/code&gt;，那么&lt;code&gt;tr&lt;/code&gt;就放在这些容器元素之中，否则直接放在&lt;code&gt;table&lt;/code&gt;的下一级。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
    &amp;lt;tr&amp;gt;...&amp;lt;/tr&amp;gt;
    &amp;lt;tr&amp;gt;...&amp;lt;/tr&amp;gt;
  &amp;lt;/table&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码表示表格共有 2 行。&lt;/p&gt;
-&lt;h4 id=&#34;4thtd&#34;&gt;4.th、td&lt;/h4&gt;
+&lt;h4 id=&#34;4-thtd&#34;&gt;4. th、td&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;th&lt;/code&gt;和&lt;code&gt;td&lt;/code&gt;都用来定义表格的单元格。其中，&lt;code&gt;th&lt;/code&gt;是标题单元格，&lt;code&gt;td&lt;/code&gt;是数据单元格。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
        &amp;lt;thead&amp;gt;
@@ -174,7 +495,7 @@
  }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码表示单元格边框之间的距离为 2 像素。&lt;/p&gt;
 &lt;h3 id=&#34;四表单标签的用法&#34;&gt;四、表单标签的用法&lt;/h3&gt;
-&lt;h4 id=&#34;1form-标签的用法&#34;&gt;1.form 标签的用法&lt;/h4&gt;
+&lt;h4 id=&#34;1-form-标签的用法&#34;&gt;1. form 标签的用法&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;form&lt;/code&gt;标签用来定义一个表单，所有表单内容放到这个容器元素之中。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;form&lt;/code&gt;有如下属性：&lt;/p&gt;
 &lt;ul&gt;
@@ -196,7 +517,7 @@
    &amp;lt;input type=&amp;quot;submit&amp;quot;&amp;gt;
  &amp;lt;/form&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面代码就是一个表单，包含一个文本输入框和一个提交按钮，文本输入框的&lt;code&gt;name&lt;/code&gt;属性是&lt;code&gt;user&lt;/code&gt;。用户在文本输入框里面，输入用户名，比如 Lucy，然后点击提交按钮，浏览器就会向服务器https://example.com/api发送一个 POST 请求，发送 user=Lucy 这样一段数据，并在一个空白窗口展示服务器返回的数据。&lt;/p&gt;
-&lt;h4 id=&#34;2input-标签的用法&#34;&gt;2.input 标签的用法&lt;/h4&gt;
+&lt;h4 id=&#34;2-input-标签的用法&#34;&gt;2. input 标签的用法&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;input&lt;/code&gt;标签是一个行内元素，用来接收用户的输入。它是一个单独使用的标签，没有结束标志。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;input&lt;/code&gt;有多种类型，取决于&lt;code&gt;type&lt;/code&gt;属性的值。&lt;code&gt;type&lt;/code&gt;属性有如下取值：&lt;/p&gt;
 &lt;ul&gt;
